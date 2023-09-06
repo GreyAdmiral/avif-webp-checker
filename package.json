@@ -1,0 +1,17 @@
+{
+	"name": "avif-webp-checker",
+	"description": "The plugin checks whether the AVIF and WebP browser supports and adds the appropriate classes to the tag html",
+	"version": "1.0.0",
+	"homepage": "https://github.com/GreyAdmiral",
+	"repository": "git://github.com/GreyAdmiral/avif-webp-checker.git",
+	"author": "Binarion (https://greyadmiral.github.io/)",
+	"main": "./index.js",
+	"keywords": [
+		"plugin",
+		"images",
+		"avif",
+		"webp",
+		"avif-webp-checker"
+	],
+	"license": "MIT"
+}
