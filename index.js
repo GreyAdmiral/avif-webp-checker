@@ -1,7 +1,25 @@
 // @ts-check
 
-// Проверка поддержки форматов avif и webp, добавление класса avif и/или webp для HTML
+/**
+ * @typedef {Object} ImageFormatOptions
+ * @property {"avif" | "webp" | "all"} mode"
+ * @property {string} avifClass
+ * @property {string} webpClass
+ * @property {boolean} onlyClass
+ * @property {number} [modeFlag]
+ * @property {number} [onlyFlag]
+ */
+
+/**
+ * @param {object} [opt]
+ * @param {"avif" | "webp" | "all"} [opt.mode]
+ * @param {string} [opt.avifClass]
+ * @param {string} [opt.webpClass]
+ * @param {boolean} [opt.onlyClass]
+ * @description Проверка поддержки форматов avif и webp, добавление класса avif и/или webp для HTML
+ */
 module.exports = function isAvifWebp(opt) {
+   /** @type {ImageFormatOptions} */
 	const options = {
 			mode: "all",
 			avifClass: "avif",
@@ -24,7 +42,7 @@ module.exports = function isAvifWebp(opt) {
 
 	// Добавление класса avif для HTML
 	if ((options.modeFlag & (1 << 1)) != 0) {
-		testAvif(function (supp) {
+		testAvif(/** @param {boolean} supp */ function (supp) {
 			const className = supp === true ? options.avifClass : null;
 
 			if (className) {
@@ -39,7 +57,7 @@ module.exports = function isAvifWebp(opt) {
 
 	// Добавление класса webp для HTML
 	if ((options.modeFlag & (1 << 0)) != 0) {
-		testWebP(function (supp) {
+		testWebP(/** @param {boolean} supp */ function (supp) {
 			const className = supp === true ? options.webpClass : null;
 
 			if (className) {
@@ -50,7 +68,10 @@ module.exports = function isAvifWebp(opt) {
 		});
 	}
 
-	// Проверка поддержки avif
+   /**
+    * @param {function} cb 
+    * @description Проверка поддержки avif
+    * */
 	function testAvif(cb) {
 		const aviF = new Image();
 
@@ -62,7 +83,10 @@ module.exports = function isAvifWebp(opt) {
 			"data:image/avif;base64,AAAAHGZ0eXBtaWYxAAAAAG1pZjFhdmlmbWlhZgAAAOxtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAHmlsb2MAAAAABEAAAQABAAAAAAEQAAEAAAAcAAAAKGlpbmYAAAAAAAEAAAAaaW5mZQIAAAAAAQAAYXYwMUltYWdlAAAAAGtpcHJwAAAATGlwY28AAAAUaXNwZQAAAAAAAAACAAAAAgAAABBwYXNwAAAAAQAAAAEAAAASYXYxQ4EAHAAKBBgANpUAAAAOcGl4aQAAAAABCAAAABdpcG1hAAAAAAAAAAEAAQQBAoOEAAAAJG1kYXQKBBgANpUyFBZAAAElwATsB8r2tLEuqGulG3GS";
 	}
 
-	// Проверка поддержки webp
+   /**
+    * @param {function} cb 
+    * @description Проверка поддержки webp
+    * */
 	function testWebP(cb) {
 		const webP = new Image();
 
