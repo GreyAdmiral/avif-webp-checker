@@ -7,13 +7,13 @@
 #### CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/avif-webp-checker@1.0.3/dist/avif-webp-checker.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/avif-webp-checker@1.0.4/dist/avif-webp-checker.min.js"></script>
 ```
 
 or
 
 ```html
-<script src="https://unpkg.com/avif-webp-checker@1.0.3/dist/avif-webp-checker.min.js"></script>
+<script src="https://unpkg.com/avif-webp-checker@1.0.4/dist/avif-webp-checker.min.js"></script>
 ```
 
 #### Import
@@ -73,7 +73,7 @@ In the "all" mode, only 1 of the classes is added.If the browser supports the AV
 #### CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/avif-webp-checker@1.0.3/dist/avif-webp-checker.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/avif-webp-checker@1.0.4/dist/avif-webp-checker.min.js"></script>
 
 ...
 
@@ -85,7 +85,7 @@ In the "all" mode, only 1 of the classes is added.If the browser supports the AV
 or
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/avif-webp-checker@1.0.3/dist/avif-webp-checker.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/avif-webp-checker@1.0.4/dist/avif-webp-checker.min.js"></script>
 
 ...
 
