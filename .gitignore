@@ -1,5 +1,4 @@
 # Игнорировать файлы и каталоги сборки и зависимостей
-dist/
 node_modules/
 bower_components/
 package-lock.json
@@ -17,6 +16,8 @@ version.json
 *.komodoproject
 .vscode/*
 !.vscode/extensions.json
+/.gigacode
+/.gigacode_vsc
 
 # Игнорировать файлы карт
 *.css.map

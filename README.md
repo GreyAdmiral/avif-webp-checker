@@ -4,11 +4,27 @@
 
 ## Install
 
+#### CDN
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/avif-webp-checker@1.0.3/dist/avif-webp-checker.min.js"></script>
+```
+
+or
+
+```html
+<script src="https://unpkg.com/avif-webp-checker@1.0.3/dist/avif-webp-checker.min.js"></script>
+```
+
+#### Import
+
+Run the command in the console
+
 ```shell
 npm i avif-webp-checker
 ```
 
-## Import
+Perform the import
 
 ```javascript
 const isAvifWebp = require("avif-webp-checker");
@@ -54,8 +70,34 @@ In the "all" mode, only 1 of the classes is added.If the browser supports the AV
 
 ## Usage
 
+#### CDN
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/avif-webp-checker@1.0.3/dist/avif-webp-checker.min.js"></script>
+
+...
+
+<script>
+   isAvifWebp({mode: "webp", webpClass: "mywebpclass"});
+</script>
+```
+
+or
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/avif-webp-checker@1.0.3/dist/avif-webp-checker.min.js"></script>
+
+...
+
+<script>
+   isAvifWebp();
+</script>
+```
+
+#### Import
+
 ```javascript
-const isAvifWebp = require("avif-webp-checker");
+import isAvifWebp from 'avif-webp-checker'
 
 isAvifWebp({mode: "webp", webpClass: "mywebpclass"});
 ```
