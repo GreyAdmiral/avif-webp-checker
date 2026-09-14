@@ -1,8 +1,8 @@
 {
-   "name": "@binarion/event-bus",
+   "name": "avif-webp-checker",
    "private": false,
    "description": "The plugin checks whether the AVIF and WebP browser supports and adds the appropriate classes to the tag html",
-   "version": "1.0.4",
+   "version": "1.0.5",
    "homepage": "https://github.com/GreyAdmiral/avif-webp-checker",
    "repository": "https://github.com/GreyAdmiral/avif-webp-checker.git",
    "author": "Binarion (https://greyadmiral.github.io/)",
